@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import ShowTime from './ShowTime';
 import reportWebVitals from './reportWebVitals';
+import ToogleButton from './ToogleButton';
 
 function showTime(){
  
@@ -11,7 +12,7 @@ function showTime(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
-<ShowTime />
+<ToogleButton/>
  
 );
 
