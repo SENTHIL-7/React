@@ -5,6 +5,7 @@ import ShowTime from './ShowTime';
 
 import reportWebVitals from './reportWebVitals';
 import ToogleButton from './ToogleButton';
+import HomePage from './HomePage';
 
 
  
@@ -14,7 +15,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
 <>
-<ShowTime/></>
+<HomePage/>
+</>
 
  
 );
