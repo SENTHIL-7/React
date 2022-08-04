@@ -29,11 +29,14 @@ export default class HomePage extends React.Component {
   render() {
     
     const logged =this.state.Logged;
-    if(logged){
-        return <Logout onClick={this.functionLogout}/>
-    }
-    else{
-        return <Login onClick={this.functionLogin}/>
-    }
+   return(
+       <div>
+        {logged && <Logout onClick={this.functionLogout}/>}
+  
+      {!logged && <Login onClick={this.functionLogin}/>}
+       </div>
+
+    ) 
+  
   }
 }
