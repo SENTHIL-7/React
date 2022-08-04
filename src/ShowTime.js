@@ -8,14 +8,19 @@ export default class ShowTime extends React.Component {
      this.state = {
         time:new Date()
      }
+   
    }
-   componentDidUpdate(){
-    setInterval(
-        () =>this.showTime(),1000
-    )
-   }
+ 
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        time : new Date()
+      })
+    }, 1000)
+  }
+
    showTime(){
-    this.setState({time:new Date()})
+    this.setState(state=>({time:new Date()}))
    }
   render() {
     return (
