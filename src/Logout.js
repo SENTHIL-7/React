@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default function Logout() {
+export default function Logout(props) {
   return (
-    <div>Welcome you are logged</div>
+    <div>
+        <h1>Welcome you are logged</h1>
+    <button onClick={props.onClick}>Logout</button>
+    </div>
   )
 }
