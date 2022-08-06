@@ -10,12 +10,8 @@ export default class HomePage extends React.Component {
     this.functionLogout = this.functionLogout.bind(this);
  }
 
-//  functionLogin(){
-//     this.setState(()=>{
-//         this.Logged=true}
-//     )
-//  }
 
+ 
  functionLogin(){
     this.setState(
        { Logged:true}
@@ -34,9 +30,10 @@ export default class HomePage extends React.Component {
         {logged && <Logout onClick={this.functionLogout}/>}
   
       {!logged && <Login onClick={this.functionLogin}/>}
+      
        </div>
 
     ) 
   
   }
-}
+} 

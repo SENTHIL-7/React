@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ShowTime from './ShowTime';
 
 import reportWebVitals from './reportWebVitals';
-import ToogleButton from './ToogleButton';
-import HomePage from './HomePage';
+import Form from './form';
 
 
  
@@ -15,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
 <>
-<HomePage/>
+<Form/>
 </>
 
  
