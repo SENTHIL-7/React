@@ -5,24 +5,37 @@ export default class Form extends Component {
   constructor (props){
     super(props);
        this.state={
-        userName:null
+        userName:'',
+        age:null
        }
-       this.onChangeHandler=this.onChangeHandler.bind(this);
+      
   }
  onChangeHandler=(e)=>{
-  this.setState(
-    {userName:e.target.value}
+  let num =e.target.name;
+  let val =e.target.value;
+  this.setState({[num]:val}
   )
+ }
+ onSubmitHandler = (e)=>{
+  e.preventDefault();
+   alert("submited");
  }
   render() {
     return (
       <div>
-        <from>
+        <form  onSubmit={this.onSubmitHandler}>
           <p>Enter the Name :</p>
-          <input type={"text"} onChange={this.onChangeHandler}/>
+          <input name='userName' type={"text"} onChange={this.onChangeHandler}/>
+          <input name="age" type={"text"} onChange={this.onChangeHandler}/>
           <p>display name : {this.state.userName}</p>
+          <select value={"orange"}>
+            <option value={"apple"}>apple</option>
+            <option value={"orange"}>orange</option>
+          </select>
+          <input type={"checkbox"} />se
+          <input type={"submit"}/>
 
-        </from>
+        </form>
       </div>
     )
   }
