@@ -10,7 +10,8 @@ export default function Counder() {
  
   return (
     <div>
-         <p>the time is {time.toLocaleTimeString()}</p>
+         <p>the time is</p>
+         <button >click</button>
     </div>
   )
 }
