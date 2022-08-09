@@ -2,17 +2,15 @@ import React, { useEffect, useState } from 'react'
 
 export default function Counder() {
    
-  useEffect(
-    ()=>{
-      document.title=`count ${count}`
-    }
-  )
+  useEffect(()=>{
+    setTime(new Date())
+  })
 
-    const[count,setCound]=useState(0);
+    const[time,setTime] =useState(new Date());
+ 
   return (
     <div>
-         <p>the cound is : {count}</p>
-         <button onClick={()=>setCound(count+1)}>Click</button>
+         <p>the time is {time.toLocaleTimeString()}</p>
     </div>
   )
 }
