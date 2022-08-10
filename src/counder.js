@@ -3,15 +3,16 @@ import React, { useEffect, useState } from 'react'
 export default function Counder() {
    
   useEffect(()=>{
-    setTime(new Date())
-  })
+    setTimeout(()=>{setCount(count+1)},1000)
+  }
+  )
 
-    const[time,setTime] =useState(new Date());
+    const[count,setCount] =useState(0);
  
   return (
     <div>
-         <p>the time is</p>
-         <button >click</button>
+         <p>the time is {count}</p>
+        
     </div>
   )
 }
