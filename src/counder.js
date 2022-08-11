@@ -3,10 +3,8 @@ import React, { useEffect, useState } from 'react'
 export default function Counder() {
    
  
-    useEffect(()=>{                
-      if(count<10){                //do this
-        setTimeout(()=>{setCount(count+1)},1000)
-      }
+    useEffect(()=>{    
+    //    setTimeout(()=>{setCount(count+1)},1000)
     }
     )
   

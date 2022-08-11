@@ -1,0 +1,13 @@
+.out-box{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
