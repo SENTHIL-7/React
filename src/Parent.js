@@ -3,17 +3,17 @@ import  './Parent.css';
 
 import Child from './Child';
 
-// parent
+// parent 
 export default function Parent() {
-const[bgcolor,setBgcolor] = useState("red");
+const[bgcolor,setBgcolor] = useState(null);
  
-const getcolor = (color)=>{
+const getColor = (color)=>{
     setBgcolor(color);
 }
   return (
     <div className='out-box'>
         <div className='box' style={{background:`${bgcolor}`}}></div>
-       <Child getcolor={getcolor}/>
+       <Child getColor={getColor}/>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 // child
-export default function Child({getcolor}) {
+export default function Child({getColor}) {
 
     const[achiveColor,setAchiveColor] = useState(null);
 
@@ -10,7 +10,7 @@ export default function Child({getcolor}) {
    const handleColor =(e)=>{
     const {value} =e.target;
         setAchiveColor(value);
-        getcolor(value);
+        getColor(value);
     }
   return (
     <div>
