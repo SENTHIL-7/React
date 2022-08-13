@@ -10,4 +10,14 @@
     width: 200px;
     height: 200px;
     border: 2px solid black;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px #797373;
+    transition:top ease 2s;
+}
+.box:hover{
+    top:-50px;
+    right: 50px;
+    /* transform: scale(0.8); */
 }

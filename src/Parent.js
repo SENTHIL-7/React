@@ -12,7 +12,7 @@ const getColor = (color)=>{
 }
   return (
     <div className='out-box'>
-        <div className='box' style={{background:`${bgcolor}`}}></div>
+        <div className='box' style={{backgroundColor:`${bgcolor}`}}></div>
        <Child getColor={getColor}/>
     </div>
   )
