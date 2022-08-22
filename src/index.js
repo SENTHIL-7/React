@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import CountIND from './CountIND';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StatusCounter from './StatusCounter';
 
 
  
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
 <>
-<StatusCounter number={2}/>
+<CountIND/>
 </>
 
  

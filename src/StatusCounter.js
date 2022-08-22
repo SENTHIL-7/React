@@ -5,7 +5,7 @@ import React from 'react'
 export default function StatusCounter(props) {
       
 
-    const value =useCountStatus(props.number);
+  const value =useCountStatus(props.number);
 
   return (
     <div >
