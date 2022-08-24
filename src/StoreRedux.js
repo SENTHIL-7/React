@@ -24,7 +24,7 @@ const store = createStore(reducer,)
 
 function StoreRedux() {
   return (
-    <Provider store={}>
+    <Provider store={ }>
         <UserList/>
     </Provider>
   )
