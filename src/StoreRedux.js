@@ -1,32 +1,33 @@
 import React from 'react'
 import { createStore } from 'redux'
 import UserList from './UserList'
-import { updateUserList, UPDATE_USER_LIST } from './action'
+import { UPDATE_USER_LIST } from './action'
 import { Provider } from 'react-redux'
 
 
 const initialState = {
-    user :[]
+    users :[]
 }
 function reducer(state=initialState,action){
 
     switch(action.type){
         case UPDATE_USER_LIST:
             return {
-                users :action.users
+                ...state,users :action.users
             }
 
-        default :return users
+        default :return state
     }
 }
 
-const store = createStore(reducer,)
+const store = createStore(reducer)
 
-function StoreRedux() {
+const StoreRedux = () =>{
   return (
-    <Provider store={ }>
+    <Provider store={store}>
         <UserList/>
     </Provider>
   )
 }
+export default StoreRedux;
 

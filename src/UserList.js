@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { connect, Connect } from 'react-redux';
+import { connect} from 'react-redux';
 import { updateUserList } from './action';
+// import StoreRedux from './StoreRedux';
+// import StoreRedux from './StoreRedux';
+
 
  class UserList extends Component {
     
@@ -11,6 +14,7 @@ import { updateUserList } from './action';
             const users =res.data;
             console.log("......",res)
             this.props.updateUserList(users);
+    
         })
     }
   render() {
@@ -18,6 +22,7 @@ import { updateUserList } from './action';
      <ul>
          {this.props.users.map(user =>
         <li>{user.name}</li>)}
+        {/* <li>hi</li> */}
      </ul>
     )
   }
@@ -32,4 +37,4 @@ const mapDispatchToProps={
     updateUserList
 }
 
-export default connect(mapStateToProps,map)(UserList)
+export default connect(mapStateToProps,mapDispatchToProps)(UserList)
