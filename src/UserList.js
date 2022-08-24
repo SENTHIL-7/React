@@ -34,7 +34,7 @@ function mapStateToProps(state){
     }
 }
 const mapDispatchToProps={
-    updateUserList
+    updateUserList 
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(UserList)
