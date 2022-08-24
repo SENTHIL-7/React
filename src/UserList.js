@@ -35,6 +35,6 @@ function mapStateToProps(state){
 }
 const mapDispatchToProps={
     updateUserList 
-}
+} 
 
 export default connect(mapStateToProps,mapDispatchToProps)(UserList)
