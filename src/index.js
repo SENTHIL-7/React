@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import CountIND from './CountIND';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import StoreRedux from './StoreRedux';
+import UserList from './UserList';
 
 
  
@@ -12,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
 <>
-<CountIND/>
+<UserList/>
 </>
 
  
