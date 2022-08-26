@@ -9,7 +9,7 @@ export default class ShowTime extends React.Component {
         time:new Date()
      }
    
-   }
+   } 
  
   componentDidMount() {
     setInterval(() => {
